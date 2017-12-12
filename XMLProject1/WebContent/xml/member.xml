@@ -25,4 +25,16 @@
 		<hp>010-000-000</hp>
 		<from/>
 	</list>
+	<list no="a5">
+		<id>admin</id>
+		<name>aaa</name>
+		<hp>010-000-000</hp>
+		<from/>
+	</list>
+	<list no="a6">
+		<id>admin</id>
+		<name>aaa</name>
+		<hp>010-000-000</hp>
+		<from/>
+	</list>
 </member>

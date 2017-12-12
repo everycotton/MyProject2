@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 1줄에 공백X,주석X 
+	
+	1) XML (필요한 데이터를 문서로 저장) : Document (HTML-View)
+	   => 문서형 데이터베이스 (조인,서브쿼리,수정,삭제 가능)
+	   => 운영체제의 호환성이 좋다.
+	   => 모든 프로그래밍언어에서 같은 내용을 출력할 수 있다.
+	   => XML
+	   	  # XML 구조 (XML)
+	   	  # 문서 제작하는 방법 (DTD, XSD)
+	   	  # 변환 (XSLT) : html, pdf
+	   	  # 언어에서 활용 : DOM, SAX(*****) : XML Parser
+	   	               ===  ===
+	   	          메모리에 저장한 상태 / 한줄씩 읽어서 데이터 가지고 온다 (SAX속도가 더 빠름)
+	   1. 구분이 되어 있다. (반정형화 데이터)
+	   	  XML : 필요한 데이터 저장시에 <a>()</a> <a href="()">
+	   	  		태그사이, 속성
+	   	  ML : 태그와 속성으로 만들어진다
+	   	  	      태그 : 여는 태그<a>, 닫는 태그</a>, Empty태그(단독태그)<input />
+	   2. XML : 태그는 지정된 것이 없다 (사용자 정의) => 시맨틱으로 제작
+	      1) XML 문법
+	         = 태그를 만들 경우
+	           # 알파벳, 한글 사용(글자갯수 한정X, 알파벳은 대소문자 구분)
+	           	 HTML : <A> == <a>
+	           	 XML : <A> != <a>
+	           	 Java : int A; != int a; 
+	   		   # 숫자를 사용할 수 있다 : 단 앞에 사용 금지
+	   		     <2aaa> (X) => <a2> <a3> (O)
+	   		   # 특수문자 사용이 가능: _, -, ., $, :
+	   		   	 <c:forEach> <file_name> <file.size>
+	   		   # 키워드(예약어)를 사용할 수 없다. => xml
+	   		   # 반드시 최상의 태그는 1개만 존재
+	   		     = 계층구조 : 전체 루트 태그
+	   		     = 열고 닫는 태그가 반드시 일치 (순서)
+	   		       <a><b><c></c></b></a>
+	   		   # 속성은 값을 지정할 때 반드시 "", ''을 사용해야 함
+	   		   	 <table width=300> (X) <table width="300"> (O)
+-->
+
+<sawon> <!-- 테이블명 -->
+	<list> <!-- row(record) -->
+		<sabun>1</sabun> <!-- 컬럼값 -->
+		<name>홍길동</name>
+		<dept>개발부</dept>
+		<sex>남</sex>
+		<age>26</age>
+	</list>
+	<list>
+		<sabun>2</sabun>
+		<name>심청이</name>
+		<dept>개발부</dept>
+		<sex>여</sex>
+		<age>22</age>
+	</list>
+	<list>
+		<sabun>3</sabun>
+		<name>박문수</name>
+		<dept>개발부</dept>
+		<sex>남</sex>
+		<age>24</age>
+	</list>
+</sawon>

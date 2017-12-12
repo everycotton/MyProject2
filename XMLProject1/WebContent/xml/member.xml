@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE member SYSTEM "member.dtd"> <!-- dtd파일 읽어들이기 -->
+<member>
+	<list no="a1">
+		<id>admin</id>
+		<name>aaa</name>
+		<hp>010-000-000</hp>
+		<from/>
+	</list>
+</member>

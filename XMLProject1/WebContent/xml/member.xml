@@ -7,4 +7,16 @@
 		<hp>010-000-000</hp>
 		<from/>
 	</list>
+	<list no="a2">
+		<id>admin</id>
+		<name>aaa</name>
+		<hp>010-000-000</hp>
+		<from/>
+	</list>
+	<list no="a3">
+		<id>admin</id>
+		<name>aaa</name>
+		<hp>010-000-000</hp>
+		<from/>
+	</list>
 </member>
